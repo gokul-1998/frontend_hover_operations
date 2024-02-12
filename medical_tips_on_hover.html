@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.aus-medical-home-table,
+.aus-medical-home-table td {
+    border-collapse: collapse;
+	margin: 5%;
+	padding: 10px;
+}
+.aus-medical-home-table tr:hover {
+  color: #f60;
+  cursor: pointer;
+}
+/* 
+ * Tooltip
+ */
+.table-content {
+	height: 300px;
+	position: relative;
+}
+.tooltip {
+	border: 1px solid lightgrey;
+	display: block;
+    position: relative;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #F60;
+    color: #fff;
+    text-align: justify;
+    border-radius: 6px;
+    padding: 0 15px;
+    position: absolute;
+    z-index: 100;
+    top: -5px;
+    left: 110%;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #F60 transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+    </style>
+</head>
+<body>
+    <!-- https://codepen.io/JackEdwardLyons/pen/wWEmQg -->
+
+<div class="table-content">
+    <table class="aus-medical-home-table">
+       <tr class="tooltip">
+         <td>
+           <div class="">&#10004; <strong>Person-centred care</strong>
+             <span class="tooltiptext"><p>A medical home partners with patients, carers, and family to ensure cultural preferences and values are respected. Patients receive the education and support they need for shared decision making and to manage their own conditions to the extent they are able. Patients have the opportunity to participate in the care design of the medical home.</p></span>
+           </div>
+         </td>
+         <td>
+            asdasd
+         </td>
+         <td>sdsdd</td>
+      </tr>
+      <tr class="tooltip">
+        <td>
+          <div>&#10004; <strong>Comprehensive care</strong>
+            <span class="tooltiptext"><p>The medical home team is responsible for the range of each patient's physical and mental healthcare needs - including prevention and wellness, acute care and chronic care. Care in the medical home is continuous - each patient has an ongoing relationship with a particular GP and the medical home team.</p></span>
+          </div>
+        </td>
+      </tr>
+       <tr class="tooltip">
+         <td>
+           <div>&#10004; <strong>Coordinated care</strong>
+             <span class="tooltiptext"><p>The medical home ensures each patient can access the full team they need to manage their health, which includes arranging and coordinating care with other providers. This may sometimes include hospital inpatient care.</p>
+             <p>The medical home ensures that each person experiences integrated (joined-up) health care, in which there is consistency of information between all team members with clear roles, goals and communication pathways.</p>
+             <p>The medical home accepts accountability for a patient's care, even when that person is not standing in front of them. It tries to ensure that each patient receives best possible care from all members of their care team.</p>
+             </span>
+           </div>
+         </td>
+      </tr>
+       <tr class="tooltip">
+         <td>
+           <div>&#10004; <strong>Accessible care</strong>
+             <span class="tooltiptext"><p>In a medical home, patients can access care for their acute or routine medical needs when required. The medical home is also proactive in managing chronic conditions. A medical home uses a range of tools to communicate tools with patients.</p>
+             </span>
+           </div>
+         </td>
+      </tr>
+       <tr class="tooltip">
+         <td>
+           <div>&#10004; <strong>Focus on quality and safety</strong>
+             <span class="tooltiptext"><p>A medical home has a systems-based approach to make sure that each patient receives best practice care. It has systems to improve patient safety.</p>
+             </span>
+           </div>
+         </td>
+      </tr>
+  </table>
+</div>
+
+</body>
+</html>
